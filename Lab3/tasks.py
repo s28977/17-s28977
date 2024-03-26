@@ -16,3 +16,16 @@ def squares(start, end):
 
 print(squares(2, 8))
 
+
+# Task 3: Classes
+# Create a class called SquareGenerator that has a method to generate squares for a given
+# range of numbers.
+
+class SquareGenerator:
+    def squares(self, start, end):
+        return [x ** 2 for x in range(start, end)]
+
+
+square_gen = SquareGenerator()
+print(square_gen.squares(2, 8))
+

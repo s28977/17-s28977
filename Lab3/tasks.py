@@ -59,6 +59,8 @@ print(square_gen.squares(6, 3))
 # Override the square generation method in the Cubic Generator class to generate squares
 # with a check to see if the start of the range is less than the end, if not return an Exceptions
 # Task 10: Abstract Elements
+
+
 # Convert the SquareGenerator class into an abstract base class (ABC) using the abc module,
 # making the generate_squares method abstract. Ensure that the CubicGenerator class
 # implements this abstract method.

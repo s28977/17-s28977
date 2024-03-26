@@ -1,5 +1,5 @@
 import math
-from square_generator_package.square_generator import SquareGenerator
+from square_generator_package.square_generator import CubicGenerator
 
 # Task 1: List Comprehensions
 # Write a Python program that generates a list of squares of numbers from 1 to 10 using list
@@ -25,21 +25,21 @@ print(squares(2, 8))
 # range of numbers.
 
 
-square_gen = SquareGenerator()
-print(square_gen.squares(5, 3))
+square_gen = CubicGenerator()
+print(square_gen.generate_squares(5, 3))
 
 # Task 4: Libraries
 # Utilize the math library to calculate the square root of each number in the generated list from
 # the previous task.
 
-square_roots = [math.sqrt(x) for x in square_gen.squares(1, 11)]
+square_roots = [math.sqrt(x) for x in square_gen.generate_squares(1, 11)]
 print(square_roots)
 
 # Task 5: Exceptions
 # Handle the case where the end of the range is less than the start in the SquareGenerator
 # class.
 
-print(square_gen.squares(6, 3))
+print(square_gen.generate_squares(6, 3))
 
 # Task 6: Modules
 # Extract the SquareGenerator class into a separate module named square_generator_package.py.
@@ -54,15 +54,19 @@ print(square_gen.squares(6, 3))
 # Create a subclass called CubicGenerator that inherits from the SquareGenerator class.
 # Modify the CubicGenerator to generate cubes instead of squares.
 
+cubic_gen = CubicGenerator()
+print(cubic_gen.generate_cubes(5, 8))
 
 # Task 9: Function Overriding
 # Override the square generation method in the Cubic Generator class to generate squares
 # with a check to see if the start of the range is less than the end, if not return an Exceptions
+
+
 # Task 10: Abstract Elements
-
-
 # Convert the SquareGenerator class into an abstract base class (ABC) using the abc module,
 # making the generate_squares method abstract. Ensure that the CubicGenerator class
 # implements this abstract method.
+
+
 # Task 11:
 # The result of the assignment should be a link to a pull request

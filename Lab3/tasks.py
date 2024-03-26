@@ -25,11 +25,13 @@ print(squares(2, 8))
 
 class SquareGenerator:
     def squares(self, start, end):
+        if start > end:
+            raise ValueError('End value must be greater than or equal to start value')
         return [x ** 2 for x in range(start, end)]
 
 
 square_gen = SquareGenerator()
-print(square_gen.squares(2, 8))
+print(square_gen.squares(5, 3))
 
 # Task 4: Libraries
 # Utilize the math library to calculate the square root of each number in the generated list from
@@ -38,11 +40,11 @@ print(square_gen.squares(2, 8))
 square_roots = [math.sqrt(x) for x in square_gen.squares(1, 11)]
 print(square_roots)
 
-
 # Task 5: Exceptions
 # Handle the case where the end of the range is less than the start in the SquareGenerator
 # class.
 
+print(square_gen.squares(6,3))
 
 # Task 6: Modules
 # Extract the SquareGenerator class into a separate module named square_generator.py.

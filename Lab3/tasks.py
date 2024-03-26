@@ -1,4 +1,5 @@
 import math
+from square_generator import SquareGenerator
 
 # Task 1: List Comprehensions
 # Write a Python program that generates a list of squares of numbers from 1 to 10 using list
@@ -23,12 +24,6 @@ print(squares(2, 8))
 # Create a class called SquareGenerator that has a method to generate squares for a given
 # range of numbers.
 
-class SquareGenerator:
-    def squares(self, start, end):
-        if start > end:
-            raise ValueError('End value must be greater than or equal to start value')
-        return [x ** 2 for x in range(start, end)]
-
 
 square_gen = SquareGenerator()
 print(square_gen.squares(5, 3))
@@ -44,10 +39,12 @@ print(square_roots)
 # Handle the case where the end of the range is less than the start in the SquareGenerator
 # class.
 
-print(square_gen.squares(6,3))
+print(square_gen.squares(6, 3))
 
 # Task 6: Modules
 # Extract the SquareGenerator class into a separate module named square_generator.py.
+
+
 # Task 7: Packages
 # Transform the square_generator module into a package by adding an empty __init__.py file
 # and organize it accordingly.

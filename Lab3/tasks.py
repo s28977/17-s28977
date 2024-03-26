@@ -1,5 +1,5 @@
 import math
-from square_generator import SquareGenerator
+from square_generator_package.square_generator import SquareGenerator
 
 # Task 1: List Comprehensions
 # Write a Python program that generates a list of squares of numbers from 1 to 10 using list
@@ -42,12 +42,14 @@ print(square_roots)
 print(square_gen.squares(6, 3))
 
 # Task 6: Modules
-# Extract the SquareGenerator class into a separate module named square_generator.py.
+# Extract the SquareGenerator class into a separate module named square_generator_package.py.
 
 
 # Task 7: Packages
-# Transform the square_generator module into a package by adding an empty __init__.py file
+# Transform the square_generator_package module into a package by adding an empty __init__.py file
 # and organize it accordingly.
+
+
 # Task 8: Inheritance
 # Create a subclass called CubicGenerator that inherits from the SquareGenerator class.
 # Modify the CubicGenerator to generate cubes instead of squares.
